@@ -1,0 +1,35 @@
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Check community files
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in \
+            CODE_OF_CONDUCT.md \
+            CONTRIBUTING.md \
+            LICENSE \
+            SECURITY.md \
+            SUPPORT.md \
+            profile/README.md \
+            .github/ISSUE_TEMPLATE/bug.yml \
+            .github/ISSUE_TEMPLATE/config.yml \
+            .github/ISSUE_TEMPLATE/feature.yml \
+            .github/pull_request_template.md
+          do
+            test -s "$file"
+          done

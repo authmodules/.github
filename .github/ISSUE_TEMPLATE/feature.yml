@@ -1,0 +1,35 @@
+name: Feature proposal
+description: Propose a focused package or contract improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What concrete integration or security problem needs to be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Proposed package boundary
+      description: Identify the repository responsibility and contracts involved.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Architecture constraints
+      options:
+        - label: This does not require a monolith or ORM lock-in.
+          required: true
+        - label: This does not expose raw secrets or internal failures.
+          required: true
