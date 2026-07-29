@@ -38,4 +38,4 @@ body:
     id: runtime
     attributes:
       label: Runtime
-      placeholder: "Node.js 24, PostgreSQL 17"
+      placeholder: "Node.js 24, PostgreSQL 18"

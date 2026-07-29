@@ -4,7 +4,7 @@ Composable TypeScript building blocks for authentication and identity.
 
 AuthModules is an open-source ecosystem of small, independent packages with explicit boundaries. Applications keep control of policy, user experience, persistence, HTTP composition, and deployment.
 
-> **Project status:** private pre-release development. Package repositories and `0.1.0` releases will appear only after their implementations and contracts are ready for public use.
+> **Project status:** pre-1.0 development. Package availability is determined by published releases; compatibility may change before 1.0.
 
 ## Design principles
 
@@ -20,7 +20,7 @@ AuthModules is an open-source ecosystem of small, independent packages with expl
 
 The ecosystem is being designed around contracts, orchestration, authentication methods, storage, cryptography, session tokens, framework adapters, delivery, guards, compliance tooling, and reliable side-effect processing.
 
-The repositories remain private while these boundaries can still change. No package or version is currently published or supported.
+Pre-1.0 contracts may still evolve. Shared reporting and support routes are defined in [SECURITY.md](../SECURITY.md) and [SUPPORT.md](../SUPPORT.md).
 
 ## Security
 
