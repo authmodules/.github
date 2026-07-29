@@ -20,7 +20,7 @@ AuthModules is an open-source ecosystem of small, independent packages with expl
 
 The ecosystem is being designed around contracts, orchestration, authentication methods, storage, cryptography, session tokens, framework adapters, delivery, guards, compliance tooling, and reliable side-effect processing.
 
-Pre-1.0 contracts may still evolve. Shared reporting and support routes are defined in [SECURITY.md](../SECURITY.md) and [SUPPORT.md](../SUPPORT.md).
+Pre-1.0 contracts may still evolve. Shared reporting and support routes are defined in [SECURITY.md](/authmodules/.github/blob/main/SECURITY.md) and [SUPPORT.md](/authmodules/.github/blob/main/SUPPORT.md).
 
 ## Security
 
