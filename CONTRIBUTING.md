@@ -10,8 +10,10 @@ Open implementation changes in the repository that owns the affected package. Us
 2. Keep the change within one repository responsibility. Coordinate contract changes with every affected package rather than introducing hidden cross-package coupling.
 3. Keep repository-facing code, documentation, tests, commits, and pull requests in English.
 4. Add focused regression tests for behavior changes and security fixes.
-5. Run the repository's `npm run check` command and include any additional adapter-specific integration check documented by that repository.
+5. Run the repository's `npm run check` command and include any additional adapter-specific integration check documented by that repository. When a package's exported entrypoints or declarations intentionally change, run `npm run api:update` and review `api-surface.json`.
 6. Do not include credentials, raw tokens, passwords, OTP values, personal data, private provider responses, or generated build artifacts.
-7. Keep public APIs minimal and backward-compatible. Explain any unavoidable contract change and its ecosystem impact in the pull request.
+7. Keep public APIs minimal and backward-compatible. Explain any unavoidable contract change and its ecosystem impact in the pull request. Under the conservative compatibility policy, any public API snapshot change requires at least the next minor version before `1.0.0` and the next major version after `1.0.0`.
+
+Pull requests also run dependency review and CodeQL. Dependency automation does not replace review: confirm package compatibility, release notes, lockfile scope, and the complete repository check before merging an update.
 
 Report suspected vulnerabilities through the private security-reporting route described in `SECURITY.md`, not through a public issue.
