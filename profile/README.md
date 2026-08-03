@@ -6,6 +6,8 @@ AuthModules is an open-source ecosystem of small, independent packages with expl
 
 > **Project status:** pre-1.0 development. Package availability is determined by published releases; compatibility may change before 1.0.
 
+Packages are published through GitHub Packages. Publication to npmjs is intentionally deferred.
+
 ## Design principles
 
 - Small packages.
@@ -20,7 +22,7 @@ AuthModules is an open-source ecosystem of small, independent packages with expl
 
 The ecosystem includes contracts, orchestration, authentication methods, storage, cryptography, session tokens, framework adapters, delivery, guards, compliance tooling, and reliable side-effect processing.
 
-Pre-1.0 contracts may still evolve. Shared reporting and support routes are defined in [SECURITY.md](/authmodules/.github/blob/main/SECURITY.md) and [SUPPORT.md](/authmodules/.github/blob/main/SUPPORT.md).
+Pre-1.0 contracts may still evolve. Shared reporting and support routes are defined in [SECURITY.md](../SECURITY.md) and [SUPPORT.md](../SUPPORT.md).
 
 ## Security
 
